@@ -1,6 +1,6 @@
 const jsonwebtoken = require('jsonwebtoken');
 
-const secret = 'dfasfs';
+const secret = require('../../secret');
 
 module.exports = (options, app) => {
   return async function auth(ctx, next) {
